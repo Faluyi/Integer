@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 from bson.objectid import ObjectId 
 
-uri = "mongodb://localhost:27017"
+uri = "mongodb+srv://Faluyi:Akindele@cluster0.ozepuyt.mongodb.net/?retryWrites=true&w=majority"
 client = MongoClient(uri)
 db = client['Integers_Db']
 Integers = db['Integers']
