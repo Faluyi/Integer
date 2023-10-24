@@ -19,7 +19,7 @@ def post_integer():
         Integer_db.replace_integer(prev_val_id, curr_value)     
         return jsonify({"value": curr_value})
 
-@app.get('/integer')
+@app.get('/')
 def get_integer():
     item = list(Integer_db.get_integer())
 
