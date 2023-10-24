@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 Integer_db = Integersdb()
 
-@app.post('/integer')
+@app.post('/')
 def post_integer():
     body = request.get_json()
     curr_value = int(body['integer'])
